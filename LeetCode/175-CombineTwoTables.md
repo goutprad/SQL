@@ -1,6 +1,6 @@
 ###**[175. Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)**
 
-##Table Schema:
+#Table Schema:
 ```sql
 Create table Person (PersonId int, FirstName varchar(255), LastName varchar(255))
 Create table Address (AddressId int, PersonId int, City varchar(255), State varchar(255))
@@ -17,7 +17,8 @@ Table: Person
 | LastName    | varchar |
 
 PersonId is the primary key column for this table.
-Table: Address
+
+#Table: Address
 | Column Name | Type    |
 |-------------|---------|
 | AddressId   | int     |
