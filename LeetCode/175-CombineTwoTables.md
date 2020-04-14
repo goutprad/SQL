@@ -10,14 +10,13 @@ Truncate table Address
 insert into Address (AddressId, PersonId, City, State) values ('1', '2', 'New York City', 'New York')
 
 Table: Person
-
-+-------------+---------+
 | Column Name | Type    |
-+-------------+---------+
+|-------------|---------|
 | PersonId    | int     |
 | FirstName   | varchar |
 | LastName    | varchar |
-+-------------+---------+
+|-------------|---------|
+
 PersonId is the primary key column for this table.
 Table: Address
 
