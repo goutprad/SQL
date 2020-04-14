@@ -1,11 +1,12 @@
-https://leetcode.com/problems/second-highest-salary/
+###**[176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)**
 
+```sql
 Create table If Not Exists Employee (Id int, Salary int)
 Truncate table Employee
 insert into Employee (Id, Salary) values ('1', '100')
 insert into Employee (Id, Salary) values ('2', '200')
 insert into Employee (Id, Salary) values ('3', '300')
-
+```
 Write a SQL query to get the second highest salary from the Employee table.
 
 | Id | Salary |
@@ -20,8 +21,7 @@ For example, given the above Employee table, the query should return 200 as the 
 |---------------------|
 | 200                 |
 
-```
-sql
+```sql
 Solution#1
 select Max(Salary) as 'SecondHighestSalary' from Employee where Salary not in (select Max(Salary) from Employee);
 
