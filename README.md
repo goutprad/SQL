@@ -1,3 +1,4 @@
 # SQL
-Structured Query Language
-  1. Leetcode Database problems
+Structured Query Language(mysql)
+  1. Leetcode Database problems (mysql)
+  2. Hackerrank (mysql)
