@@ -15,19 +15,16 @@ Table: Person
 | PersonId    | int     |
 | FirstName   | varchar |
 | LastName    | varchar |
-|-------------|---------|
 
 PersonId is the primary key column for this table.
 Table: Address
-
-+-------------+---------+
 | Column Name | Type    |
-+-------------+---------+
+|-------------|---------|
 | AddressId   | int     |
 | PersonId    | int     |
 | City        | varchar |
 | State       | varchar |
-+-------------+---------+
+
 AddressId is the primary key column for this table.
  
 
@@ -35,6 +32,8 @@ Write a SQL query for a report that provides the following information for each 
 
 FirstName, LastName, City, State
 
-Solution#
+**Solution**
+```sql
 select Person.FirstName,Person.LastName,Address.City,Address.State from Person 
 left join Address on Person.PersonId = Address.PersonId;
+```
