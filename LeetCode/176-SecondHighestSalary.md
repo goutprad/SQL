@@ -29,5 +29,5 @@ Solution#2
 select Max(Salary) as 'SecondHighestSalary' from Employee where Salary < (select Max(Salary) from Employee);
 
 Solution#3
-#select Salary as SecondHighestSalary from (select Salary FROM Employee ORDER BY salary DESC LIMIT 2) as emp ORDER BY salary asc limit 1; 
+select Salary as SecondHighestSalary from (select Salary FROM Employee ORDER BY salary DESC LIMIT 2) as emp ORDER BY salary asc limit 1; 
 ```
